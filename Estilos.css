@@ -1,20 +1,129 @@
-header{
-  background-color: #F5F1E3;
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+.identidad {
+  font-family: "Caprasimo", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5rem;
+}
+header {
+  height: 65px;
+  background-color: #f5f1e3;
+  color: #303030;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-right: 40px;
 }
 
-.SecUno{
-  background-color: #F5F1E3;
+.Opciones {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
 }
 
-.SecDos{
-  background-color: #214E34;
+nav {
+  display: flex;
+  align-items: center;
 }
 
-.SecTres{
-  background-color: #F5F1E3;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
 }
 
-footer{
-  background-color: #214E34;
+nav a {
+  text-decoration: none;
+  color: #303030;
 }
 
+nav a:hover {
+  color: #f56f21;
+}
+
+.SecUno {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: calc(100vh - 65px);
+  background-color: #f5f1e3;
+  color: #f5f1e3;
+}
+.Box-principal {
+  margin-top: 6%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 80%;
+}
+.Box-Imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: #214e34;
+}
+
+.Box-presentacion h1 {
+  font-family: "Caprasimo", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 5rem;
+}
+
+.Box-presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: #f5f1e3;
+  color: #303030;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  padding-left: 5rem;
+  font-size: 1.2rem;
+}
+
+.Box-presentacion p {
+  width: 60%;
+}
+
+.Box-presentacion button {
+  background-color: #f56f21;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 5rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.SecDos {
+  background-color: #214e34;
+}
+
+.SecTres {
+  background-color: #f5f1e3;
+}
+
+footer {
+  background-color: #214e34;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
