@@ -70,7 +70,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   width: 40%;
-  background-color: #214e34;
+  background-color: #344c34 ;
 }
 
 .Box-presentacion h1 {
@@ -96,7 +96,7 @@ nav a:hover {
 }
 
 .Box-presentacion p {
-  width: 60%;
+  width: 70%;
 }
 
 .Box-presentacion button {
@@ -112,15 +112,150 @@ nav a:hover {
 }
 
 .SecDos {
-  background-color: #214e34;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: calc(111vh - 65px);
+  color: #f5f1e3;
+  background-color: #344c34 ;
 }
 
+.box-principal2{
+  margin-top: 2%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  height: 89%;
+  align-items: center;
+}
+
+.box-SobreMi {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: #344c34 ;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  padding-left: 5rem;
+  font-size: 1.4rem;
+}
+
+.box-SobreMi h2{
+  color: #f56f21;
+  font-family: "Caprasimo", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.fotoSobreMi {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 10px solid #20432c;
+}
+
+.box-fotoSobreMi{
+  width: 40%;
+}
+
+.box-fotoSobreMi img {
+  width:100%; 
+  height:100%; 
+}
+
+
 .SecTres {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: calc(111vh - 65px);
+  color: #303030;
   background-color: #f5f1e3;
 }
 
+.box-principal3{
+  margin-top: 2%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  align-items: center;
+}
+
+.skills{
+  border-right: solid black 2px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  width: 30%;
+}
+
+.skills img{
+  width:50px; 
+  height:50px; 
+  margin: 0;
+  padding: 0;
+}
+
+.skills img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.skills h2{
+  color: #f56f21;
+  font-family: "Caprasimo", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: left;
+}
+
+.skills h3{
+  color: #303030;
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.habilidades{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2rem;
+}
+
+.formacion h2 {
+  color: #f56f21;
+  font-family: "Caprasimo", serif;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.formacion{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #f5f1e3;
+  padding-left: 5rem;
+}
+
+.formacion li{
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
 footer {
-  background-color: #214e34;
+  background-color: #344c34 ;
 }
 
 body {
