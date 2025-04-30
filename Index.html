@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -58,7 +59,7 @@
       <div class="box-SobreMi">
         <h2>Mas sobre mi</h2>
 
-      <p>Soy Miguel, desarrollador de software de Argentina,
+      <p>Soy desarrollador de software de Argentina,
          especializado en crear aplicaciones y soluciones digitales a medida.
         <br>
         <br>
@@ -139,7 +140,7 @@
       </section>
 
       <section class="experiencia">
-        <h2>experiencia</h2>
+        <h2>Experiencia</h2>
         <ul>
           <li><span class="fecha">2024-2025: Desarrollador web freelance</span></li>
           <li><span class="fecha">2023-2024: Project Manager - Sector Videovigilancia</span></li>
@@ -153,20 +154,98 @@
     </div>
     </section>
 
-    <footer>
-      <h2>Contactame</h2>
-      <div class="contactos">
-        <a href="">
-          <img src="" alt="" />
-        </a>
-        <hr />
-        <a href="">
-          <i class="fi fi-brands-whatsapp"></i>
-          <i class="fi fi-rc-circle-envelope"></i>
-          <i class="fi fi-brands-linkedin"></i>
-        </a>
+    <section class="secCuatro">
+      <div class="contenedor">
+              <h1>Proyectos</h1>
+      <div class="tarjeta">
+        <div id="fotoProyecto">
+        <img src="Imagen automatizmos.jpg" alt="MsAutomatismos">
       </div>
-      <p>Copyright © 2025 Miguel Gomez. Todos los derechos Reservados.</p>
+        <div class="infoTarjeta">
+        <h2>Sitio web para PyME de automatización de portones</h2>
+        <p>Diseño y desarrollo de una página web informativa y responsive utilizando HTML, CSS y JavaScript, con secciones como Inicio, Nosotros, Servicios y Contacto. El objetivo fue dar presencia digital a la empresa, facilitar el contacto con clientes 
+          y mostrar sus servicios de forma clara y profesional. →<a href="https://warm-cucurucho-7600df.netlify.app/principal" target="_blank">Ver progreso</a></p>
+          <div id="tecnologiasUsadas">
+          <img src="htmlProyecto.png" alt="htmlProyecto">
+          <img src="CssProyecto.png" alt="CssProyecto">
+          <img src="JsProyecto.png" alt="JsProyecto">
+        </div>
+        </div>
+
+      </div>
+      <div class="tarjeta">
+        <div id="fotoProyecto">
+          <img src="Baterias Colonia.jpg" alt="BateriasColonia">
+        </div>
+        <div class="infoTarjeta">
+        <h2>Sitio web para PyME de Venta de baterias</h2>
+        <p>Desarrollo de un sitio web informativo y adaptable a distintos dispositivos, 
+          creado con HTML, CSS, JavaScript y React. 
+          Cuenta con secciones como Inicio, Nosotros, Servicios y Contacto. 
+          El propósito es ofrecer presencia online a la empresa, 
+          facilitar la comunicación con los clientes 
+          y mostrar sus servicios de forma clara y profesional. → <span style="color: red;">(Proximamente)</span></p>
+          <div id="tecnologiasUsadas">
+            <img src="htmlProyecto.png" alt="htmlProyecto">
+            <img src="CssProyecto.png" alt="CssProyecto">
+            <img src="JsProyecto.png" alt="JsProyecto">
+            <img src="LogoReact.png" alt="ReactProyecto">
+          </div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <div id="fotoProyecto">
+          <img src="LogoProyectoProgramaIII.png" alt="LogoSistemaGesion">
+        </div>
+        <div class="infoTarjeta">
+        <h2>Gestion de articulos para catalogo comercial</h2>
+        <p>Aplicacion de escritorio desarrollada como trabajo grupal para la facultad, enfocada en la administracion de articulos de un catalogo comercial. 
+          Permite listar, buscar, agregar, modificar, eliminar y visualizar articulos, con persistencia en una base de datos preexistente. 
+          La aplicacion esta pensada para que otros servicios (sitios web, e-commerce, apps moviles, publicaciones impresas, etc.) 
+          puedan consumir esta informacion de forma centralizada. → <a href="https://github.com/LuciaShro/tp-winform-equipo-3B" target="_blank">Ver codigo</a></p></p>
+      </div>
+      </div>
+
+    </div>
+    </section>
+
+    <footer>
+      <div class="formulario">
+      <h2>Contactame</h2>
+      
+      <form action="https://formspree.io/f/mqaqelpg" method="POST">
+
+        <div class="campo">
+        <label for="email">Correo*</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com">
+      </div>
+        <br>
+        <div class="campo">
+        <label for="telefono">Telefono*</label>
+        <input type="telefono" id="telefono" name="telefono" placeholder="" required>
+        </div>
+        <br>
+        <div class="campo">
+        <label for="nombre">Nombre*</label>
+        <input type="nombre" id="nombre" name="nomre" required>
+      </div>
+        <br>
+        <div class="campo">
+        <textarea name="" id="" placeholder="Deje su mensaje" required></textarea>
+      </div>
+        <br>
+        <div class="botonFormulario">
+        <button type="button" name="enviar" onclick="alert('Consulta enviada')">Enviar</button>
+      </div>
+      </form>
+    </div>
+      <div class="contactos">
+          <a href="" class="iconosRedes"><i class="fi fi-brands-whatsapp"></i></a>
+          <a href="mailto:miguel.a.gomez0908@gmail.com" class="iconosRedes"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/miguel-gomez-6319891b5/" class="iconosRedes"><i class="fi fi-brands-linkedin"></i></a>
+        <p>Copyright © 2025 Miguel Gomez. Todos los derechos Reservados.</p>
+      </div>
     </footer>
   </body>
 </html>
