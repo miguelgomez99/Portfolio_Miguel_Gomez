@@ -16,9 +16,11 @@
       <div><h2 class="identidad">Miguel Gomez</h2></div>
       <nav class="Opciones">
         <ul>
-          <li><a href="">Sobre mi</a></li>
-          <li><a href="">Proyectos</a></li>
-          <li><a href="">Contacto</a></li>
+          <li id="inicio" ><a href="#SecUno">Inicio</a></li>
+          <li id="sobreMi" ><a href="#SecDos">Sobre mi</a></li>
+          <li id="formacion" ><a href="#SecTres">Formacion</a></li>
+          <li id="proyectos" ><a href="#secCuatro">Proyectos</a></li>
+          <li id="contacto" ><a href="#footer">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -42,7 +44,25 @@
         </div>
         <div class="Box-Imagen">
           <div class="FotoMia">
-          <img src="FotoPerfil.png" alt="Foto de Presentacion" />
+          <img src="MiaDeCostado-Photoroom.png" alt="Foto de Presentacion" />
+          <div class="etiqueta-fecha">9 agosto 1999</div>
+        <div class="etiqueta-nacionalidad">Argentina</div>
+        </div>
+        <div class="InfoMia">
+          <h1>Contacto</h1>
+          <div class="item-contacto">
+            <span class="icono">📍</span>
+            <span>Buenos Aires, Argentina</span>
+          </div>
+          <div class="item-contacto">
+            <span class="icono">✉️</span>
+            <span>miguel.a.gomez0908@gmail.com</span>
+          </div>
+          <div class="item-contacto">
+            <span class="icono"><img src="LogoGitHub.png" alt="LogoGitHub"></span>
+            <span>miguelgomez99</span>
+          </div>
+          </div>
         </div>
         </div>
       </div>
@@ -53,7 +73,7 @@
       <div class="box-principal2">
         <div class="box-fotoSobreMi">
         <div class="FotoSobreMi">
-          <img src="fotoSobreMi.jpg" alt="Foto sobre mi" >
+          <img src="OtraMia.jpeg" alt="Foto sobre mi" >
         </div>
       </div>
       <div class="box-SobreMi">
@@ -82,7 +102,7 @@
          proceso, desde la concepción de la idea hasta su implementación final, cuidando tanto la parte técnica como la gestión del proyecto.
          <br>
          <br>
-        ¿Querés charlar más? → <a href="">Mandame un email</a></p>
+        ¿Querés charlar más? → <a href="mailto:miguel.a.gomez0908@gmail.com">Mandame un email</a></p>
       </div>
     </div>
     </section>
@@ -214,7 +234,7 @@
       <div class="formulario">
       <h2>Contactame</h2>
       
-      <form action="https://formspree.io/f/mqaqelpg" method="POST">
+      <form action="" method="POST">
 
         <div class="campo">
         <label for="email">Correo*</label>
@@ -223,29 +243,33 @@
         <br>
         <div class="campo">
         <label for="telefono">Telefono*</label>
-        <input type="telefono" id="telefono" name="telefono" placeholder="" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="" required>
         </div>
         <br>
         <div class="campo">
         <label for="nombre">Nombre*</label>
-        <input type="nombre" id="nombre" name="nomre" required>
+        <input type="text" id="nombre" name="nombre" required>
       </div>
         <br>
         <div class="campo">
-        <textarea name="" id="" placeholder="Deje su mensaje" required></textarea>
+        <textarea name="mensaje" id="mensaje" placeholder="Deje su mensaje" required></textarea>
       </div>
         <br>
         <div class="botonFormulario">
-        <button type="button" name="enviar" onclick="alert('Consulta enviada')">Enviar</button>
+        <button type="button" onclick="enviar()">Enviar</button>
       </div>
       </form>
     </div>
       <div class="contactos">
           <a href="" class="iconosRedes"><i class="fi fi-brands-whatsapp"></i></a>
           <a href="mailto:miguel.a.gomez0908@gmail.com" class="iconosRedes"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/miguel-gomez-6319891b5/" class="iconosRedes"><i class="fi fi-brands-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/miguel-gomez-6319891b5/" class="iconosRedes" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+          <a href="https://github.com/miguelgomez99" class="iconosRedes" target="_blank"><i class="fi fi-brands-github"></i></a>
         <p>Copyright © 2025 Miguel Gomez. Todos los derechos Reservados.</p>
       </div>
     </footer>
+
+    <script src="scriptPortfolio.js"></script>
+
   </body>
 </html>

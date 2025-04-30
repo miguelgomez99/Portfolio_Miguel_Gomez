@@ -17,12 +17,17 @@ header {
   justify-content: space-between;
   padding-top: 1.5rem;
   padding-right: 40px;
+  position: relative;
 }
 
 .Opciones {
-  display: flex;
   align-items: center;
   padding-right: 15px;
+  position: fixed;
+  align-self: center;
+  right: 0;
+  z-index: 3;
+  border-radius: 30px;
 }
 
 nav {
@@ -40,15 +45,16 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #303030;
+  color: #f56f21;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #f56f21;
+  color: #303030;
 }
 
 .SecUno {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -64,15 +70,98 @@ nav a:hover {
   flex-direction: row;
   border-radius: 20px;
   overflow: hidden;
-  height: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .Box-Imagen {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 40%;
   background-color: #344c34;
 }
+
+.FotoMia{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 1rem;
+  display: inline-block;
+  bottom: 12rem;
+}
+
+.FotoMia img{
+  width: 100%;
+  height: auto;
+}
+
+.InfoMia{
+  position: absolute;
+  top: 700px;
+  left: 5;
+  background-color: #303030;
+  width: 34.3%;
+  height: 38%;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  margin-top: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.infoMia h2{
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.item-contacto{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-contacto .icono{
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.etiqueta-fecha,
+.etiqueta-nacionalidad {
+  position: absolute;
+  background-color: #f5a623;
+  color: rgb(255, 255, 255);
+  padding: 1.5rem 5rem;
+  border-radius: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.etiqueta-fecha {
+  top: 25em;
+  left: -4rem;
+}
+
+.etiqueta-nacionalidad {
+  bottom: 15rem;
+  right: -3rem;
+}
+
 
 .Box-presentacion h1 {
   font-family: "Caprasimo", serif;
@@ -80,6 +169,8 @@ nav a:hover {
   font-style: normal;
   font-size: 5rem;
 }
+
+
 
 .Box-presentacion {
   display: flex;
@@ -94,6 +185,7 @@ nav a:hover {
   font-weight: 100;
   padding-left: 5rem;
   font-size: 1.2rem;
+  padding-bottom: 5rem;
 }
 
 .Box-presentacion p {
@@ -122,7 +214,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: calc(111vh - 65px);
+  height: calc(100vh);
   color: #f5f1e3;
   background-color: #344c34;
 }
@@ -180,7 +272,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: calc(111vh - 65px);
+  height: calc(100vh);
   color: #303030;
   background-color: #f5f1e3;
 }
@@ -265,7 +357,7 @@ nav a:hover {
 .secCuatro {
   width: 100%;
   justify-content: center;
-  height: calc(130vh - 65px);
+  height: calc(120vh);
   display: flex;
   color: #f5f1e3;
   background-color: #344c34;
@@ -280,7 +372,8 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   height: 90%;
-  width: 90%;
+  width: 0 auto;
+  padding-bottom: 3rem;
 }
 
 .contenedor h1 {
@@ -367,15 +460,17 @@ a:hover {
 }
 
 footer {
+  display: flex;
   height: auto;
   background-color: #f5f1e3;
   align-items: center;
   flex-direction: column;
-  padding-top: 4rem;
+  height: calc(100vh);
+  justify-content: center;
 }
 
 .formulario {
-  max-width: 30%;
+  width: 25%;
   margin: 0 auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
@@ -384,8 +479,7 @@ footer {
   color: #303030;
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
-  padding: 1rem;
-  padding-bottom: 2rem;
+  padding: 5rem;
 }
 
 .formulario h2 {
@@ -395,9 +489,8 @@ footer {
 }
 
 .contactos {
-  align-items: center;
   text-align: center;
-  padding-top: 2rem;
+  padding: 2rem 0;
   color: #303030;
   font-family: "Josefin Sans", sans-serif;
   font-style: normal;
@@ -407,17 +500,12 @@ footer {
   gap: 2rem;
 }
 
-html,
-body {
-  height: 80%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .iconosRedes {
