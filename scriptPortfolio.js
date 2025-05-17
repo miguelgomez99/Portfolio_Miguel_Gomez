@@ -1,3 +1,36 @@
+function scrollToElement(elementSelector, instance=0){
+  const elemento = document.querySelectorAll(elementSelector);
+  if (elemento.length>instance){
+    elemento[instance].scrollIntoView({behavior: 'smooth'})
+  }
+}
+
+const inicio = document.getElementById("inicio");
+const sobreMi = document.getElementById("sobreMi");
+const formacion = document.getElementById("formacion");
+const proyectos = document.getElementById("proyectos");
+const contacto = document.getElementById("contacto");
+
+inicio.addEventListener ('click', ()=>{
+  scrollToElement('header')
+})
+
+sobreMi.addEventListener ('click', ()=>{
+  scrollToElement('.SecDos')
+})
+
+formacion.addEventListener ('click', ()=>{
+  scrollToElement('.SecTres')
+})
+
+proyectos.addEventListener ('click', ()=>{
+  scrollToElement('.secCuatro')
+})
+
+contacto.addEventListener ('click', ()=>{
+  scrollToElement('footer')
+})
+
 function enviar(){
   var nombre = document.getElementById("nombre").value;
   var correo = document.getElementById("email").value;
