@@ -539,3 +539,267 @@ textarea {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+@media screen and (max-width: 1200px) {
+  .Box-principal, .box-principal2, .box-principal3 {
+    width: 95%;
+  }
+
+  .Box-presentacion h1 {
+    font-size: 4rem;
+  }
+
+  .Box-presentacion p {
+    width: 90%;
+  }
+
+  .FotoMia {
+    width: 45%;
+    bottom: 8rem;
+  }
+
+  .InfoMia {
+    width: 40%;
+    top: 600px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    padding: 1rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Opciones {
+    position: static;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Box-principal, .box-principal2, .box-principal3 {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .Box-presentacion, .Box-Imagen, .box-SobreMi, .box-fotoSobreMi, .skills, .formacion {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  .FotoMia {
+    position: relative;
+    width: 80%;
+    bottom: 0;
+    margin: 2rem auto;
+  }
+
+  .InfoMia {
+    position: relative;
+    width: 90%;
+    top: 0;
+    margin: 2rem auto;
+  }
+
+  .etiqueta-fecha, .etiqueta-nacionalidad {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 1rem auto;
+    width: fit-content;
+  }
+
+  .tarjeta {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  #fotoProyecto {
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario {
+    width: 90%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Box-presentacion h1 {
+    font-size: 3rem;
+  }
+
+  .Box-presentacion p, .box-SobreMi p {
+    font-size: 1rem;
+  }
+
+  .skills h2, .formacion h2, .box-SobreMi h2 {
+    font-size: 2rem;
+  }
+
+  .habilidades {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .item-contacto {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Box-presentacion h1 {
+    font-size: 2.5rem;
+  }
+
+  .identidad {
+    font-size: 2rem;
+  }
+
+  .Box-presentacion button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .formulario h2 {
+    font-size: 2rem;
+  }
+
+  .contactos {
+    padding: 1rem;
+  }
+
+  .iconosRedes {
+    font-size: 1.5rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.Box-presentacion, .box-SobreMi, .formacion {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.infoTarjeta p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .Opciones {
+    background-color: #f5f1e3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  nav ul li:hover {
+    background-color: rgba(245, 111, 33, 0.1);
+  }
+}
+
+.menu-hamburguesa {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.barra {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #303030;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .menu-hamburguesa {
+    display: block;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .menu-hamburguesa.activo .barra:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-hamburguesa.activo .barra:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-hamburguesa.activo .barra:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .Opciones {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f1e3;
+    transition: 0.3s ease-in-out;
+    padding-top: 5rem;
+    z-index: 999;
+  }
+
+  .Opciones.activo {
+    right: 0;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .menu-items li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .menu-items li a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .menu-items li:hover {
+    background-color: rgba(245, 111, 33, 0.1);
+  }
+}

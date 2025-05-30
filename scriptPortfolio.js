@@ -48,3 +48,26 @@ function enviar(){
   console.log("Telefono ingresado: " + telefono )
   console.log("Mensaje enviado: " + mensaje )
 }
+
+const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+const menuOpciones = document.querySelector('.Opciones');
+const menuItems = document.querySelectorAll('.menu-items li a');
+
+menuHamburguesa.addEventListener('click', () => {
+  menuHamburguesa.classList.toggle('activo');
+  menuOpciones.classList.toggle('activo');
+});
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    menuHamburguesa.classList.remove('activo');
+    menuOpciones.classList.remove('activo');
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!menuOpciones.contains(e.target) && !menuHamburguesa.contains(e.target)) {
+    menuHamburguesa.classList.remove('activo');
+    menuOpciones.classList.remove('activo');
+  }
+});
